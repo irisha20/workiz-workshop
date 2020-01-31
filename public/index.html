@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Workiz - Best Workshops Ever!</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+
+
+
+  <div id="wrap">
+
+    <div id="main">
+
+
+      <div class="header-container">
+        <a href="https://workiz.com/"><img class="logo" src="images/logo.png" alt="workiz"></a>
+
+        <div class="header-link">
+
+
+          <a href="https://workiz.com/">Home</a>
+          <a href="https://workiz.com/blog/">About</a>
+          <a href="https://workiz.com/contact-us/">Contact</a>
+        </div>
+      </div>
+      
+      <div class="main-image"></div>
+
+      <div class="top-container">
+
+
+        <div class="main-text">
+          <h1>Join Workiz Workshops! </h1>
+          <h2>Workshops occur on the first Sunday of each first month in each quarter.</h2>
+
+
+          <div class="form-style-10">
+            <h2>Register & Save your seat!</h2>
+            <form action="/submit" name="form1" method="post">
+
+              <div class="inner-wrap">
+                <label>Choose Workshop <select name="workshop">
+                    <option value="default"></option>
+                    <option value="baking">Baking Workshop</option>
+                    <option value="hair">Hairdressing Workshop </option>
+                    <option value="makeup">Makeup Workshop</option>
+                    <option value="painting">Painting Workshop</option>
+                  </select></label>
+                <label>Your Full Name <input type="text" name="fullName" pattern="[a-zA-Z][a-zA-Z ]{2,}" required /></label>
+                <label>Email <input type="email" name="email" required /></label>
+                <label>Phone <span>(Format: 050-8888888)</span><input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{7}" /></label>
+                <label>Comments <textarea name="comments" rows="4" cols="50"></textarea></label>
+              </div>
+
+
+
+
+              <div>
+                <input type="submit" name="Register" onclick="ValidateEmail(document.form1.email)" />
+
+              </div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/company/workizinc/">LinkedIn</a>
+    <a class="footer-link" href="https://twitter.com/workizinc">Twitter</a>
+    <a class="footer-link" href="https://www.facebook.com/workiz/">Facebook</a>
+    <p class="copyright">© 2020 Workiz</p>
+  </div>
+  <script src="validation.js"></script>
+</body>
+
+</html>
