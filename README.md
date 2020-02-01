@@ -1,7 +1,6 @@
 Steps to run the app
 
 in root directory--> npm install
-in root -->npm start
 start MySql server
 create DB called workizdb
 create table called "subscribers" 
